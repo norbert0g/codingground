@@ -1,0 +1,19 @@
+using System.IO;
+using System;
+
+class Potega //wykorzystanie Math.Pow do obliczania potegi
+{
+    static void Main()
+    {
+        double w = 0; //wynik podnoszenia do potegi
+        double a = 1; //liczba podnoszona do potegi
+        double n = 2; //potega o ktorej ma zosac podniesiona podana liczba
+        Console.Write("Podaj liczbe ktora chcesz podniesc do potegi i nacisnij klawisz Enter: ");
+        a=Convert.ToDouble(Console.ReadLine());
+        Console.Write("Podaj wartosc potegi do ktorej chcesz podniesc podana liczbe: ");
+        n=Convert.ToDouble(Console.ReadLine());
+        w=Math.Pow(a,n);
+        Console.WriteLine(String.Format("{1} do potegi {2} to {0}", w, a, n));
+        Console.ReadKey();
+    }
+}
